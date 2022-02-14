@@ -20,9 +20,7 @@ import com.zhangyi.car.ui.adapter.TabAdapter;
 import com.zhangyi.car.widget.XCollapsingToolbarLayout;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
+ *    author : zhangyi
  *    desc   : 首页 Fragment
  */
 public final class HomeFragment extends TitleBarFragment<HomeActivity>

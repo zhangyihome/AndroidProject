@@ -205,6 +205,8 @@ dependencies {
     // 日志输出：https://github.com/getActivity/Logcat
     // 工具类：https://github.com/Blankj/AndroidUtilCode
     // 轮播图：https://github.com/bingoogolapple/BGABanner-Android
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.5'
+
     // 二维码：https://github.com/bingoogolapple/BGAQRCode-Android
     // 跑马灯：https://github.com/sunfusheng/MarqueeView
     // 对象注解：https://www.jianshu.com/p/f1f888e4a35f
