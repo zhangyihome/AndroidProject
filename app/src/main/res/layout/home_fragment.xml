@@ -28,17 +28,32 @@
                 app:layout_collapseMode="parallax"
                 app:srcCompat="@drawable/example_bg" />
 
-            <com.zhpan.bannerview.BannerViewPager
-                android:id="@+id/banner_view"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_margin="10dp"
-                android:layout_height="160dp" />
+                android:layout_height="wrap_content">
+
+                <com.zhpan.bannerview.BannerViewPager
+                    android:id="@+id/banner_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="@dimen/dp_70"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    />
+
+                <com.zhpan.indicator.IndicatorView
+                    android:id="@+id/indicator_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/banner_view"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/tb_home_title"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
-                app:layout_collapseMode="pin" >
+                app:layout_collapseMode="pin">
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -12,10 +12,10 @@ import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2019/09/15
- *    desc   : Context 意图处理（扩展非 Context 类的方法，请不要用 Context 子类实现此接口）
+ * author : Android 轮子哥
+ * github : https://github.com/getActivity/AndroidProject
+ * time   : 2019/09/15
+ * desc   : Context 意图处理（扩展非 Context 类的方法，请不要用 Context 子类实现此接口）
  */
 public interface ResourcesAction {
 
@@ -33,6 +33,10 @@ public interface ResourcesAction {
         return getResources().getString(id, formatArgs);
     }
 
+    default int getDimension(int dimen) {
+        return getResources().getDimensionPixelOffset(dimen);
+    }
+
     default Drawable getDrawable(@DrawableRes int id) {
         return ContextCompat.getDrawable(getContext(), id);
     }
@@ -41,6 +45,7 @@ public interface ResourcesAction {
     default int getColor(@ColorRes int id) {
         return ContextCompat.getColor(getContext(), id);
     }
+
 
     default <S> S getSystemService(@NonNull Class<S> serviceClass) {
         return ContextCompat.getSystemService(getContext(), serviceClass);
